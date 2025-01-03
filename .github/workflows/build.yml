@@ -22,7 +22,7 @@ jobs:
         run: mvn clean package
 
       - name: Log
-        run: tree /
+        run: tree -f .
 
       - name: Set up Docker Buildx
         uses: docker/setup-buildx-action@v2
