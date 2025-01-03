@@ -38,4 +38,4 @@ jobs:
         uses: docker/build-push-action@v6
         with:
           push: ${{ github.event_name != 'pull_request' }}
-          tags: ${{ vars.DOCKER_USERNAME }}/myBackend:latest
+          tags: ${{ vars.DOCKER_USERNAME }}/backend:latest
